@@ -8,17 +8,17 @@ import unam.fes.aragon.dinamicas.cola.Cola;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Verdugo extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(Verdugo.class.getResource("/fes/aragon/verdugo/view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("VERDUGO");
         stage.setScene(scene);
         stage.show();
     }
 
-    public String Verdugo(int k, int n, int amigo){
+    public String matar(int k, int n, int amigo){
         int posicionInicio=1;
         int posicionesRecorridas=0;
         boolean amigoSalvado= false;
@@ -45,8 +45,7 @@ public class HelloApplication extends Application {
             cantidadMaxima-=1;
         }
         if(cantidadMaxima == 1 && prisioneros.elementoSuperior() == amigo){
-            String posicionAmigoSalvado = "La posición de inicio debe ser: " + posicionInicio;
-            return posicionAmigoSalvado;
+            return Integer.toString(posicionInicio);
         }else{
             while(!amigoSalvado){
                 posicionInicio+=1;
@@ -79,11 +78,11 @@ public class HelloApplication extends Application {
                 }
 
                 if(cantidadMaxima==1 && prisioneros.elementoSuperior()==amigo){
-                    String posicionAmigoSalvado = "La posición de inicio debe ser: " + posicionInicio;
                     amigoSalvado= true;
-                    return posicionAmigoSalvado;
+                    return Integer.toString(posicionInicio);
                 }
             }
         }
+        return "No hay posición";
     }
 }
