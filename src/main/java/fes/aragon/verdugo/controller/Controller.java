@@ -22,7 +22,7 @@ public class Controller {
         String amigo = ubicacionAmigo.getText();
         String posicion = verdugo.matar(Integer.parseInt(k), Integer.parseInt(n), Integer.parseInt(amigo));
 
-        labelRespuesta.setText("El verdugo debe iniciar matando en la posición");
+        labelRespuesta.setText("El verdugo debe iniciar \nmatando en la posición");
         numeroPosicion.setText(posicion);
     }
 }

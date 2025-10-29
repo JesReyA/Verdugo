@@ -15,12 +15,21 @@
             <Image url="@images/fondo.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="603.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="454.0" fitWidth="678.0" layoutX="377.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/prisionero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="549.0" fitWidth="1010.0" layoutX="-277.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/verdugo.png" />
+         </image>
+      </ImageView>
       <Label fx:id="tituloPrisioneros" alignment="CENTER" layoutX="56.0" layoutY="119.0" prefHeight="48.0" prefWidth="220.0" text=" CANTIDAD PRISIONEROS" textFill="WHITE" />
       <Label fx:id="tituloAmigo" alignment="CENTER" layoutX="311.0" layoutY="119.0" prefHeight="48.0" prefWidth="220.0" text="UBICACION AMIGO" textFill="WHITE" />
       <Label fx:id="tituloSaltar" alignment="CENTER" layoutX="554.0" layoutY="119.0" prefHeight="48.0" prefWidth="220.0" text="PRISIONEROS A SALTAR" textFill="WHITE" />
       <Button layoutX="343.0" layoutY="323.0" mnemonicParsing="false" onAction="#obtenerPosicion" prefHeight="74.0" prefWidth="140.0" text="SALVAR AMIGO" textFill="WHITE" />
-      <Label fx:id="labelRespuesta" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="430.0" prefHeight="55.0" prefWidth="362.0">
+      <Label fx:id="labelRespuesta" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="430.0" prefHeight="55.0" prefWidth="362.0" textFill="#fcf3f3">
          <font>
             <Font size="14.0" />
          </font>
@@ -28,17 +37,7 @@
       <TextField fx:id="cantidadPrisioneros" alignment="CENTER" layoutX="55.0" layoutY="191.0" prefHeight="93.0" prefWidth="220.0" />
       <TextField fx:id="ubicacionAmigo" alignment="CENTER" layoutX="311.0" layoutY="191.0" prefHeight="93.0" prefWidth="220.0" />
       <TextField fx:id="prisionerosSaltar" alignment="CENTER" layoutX="557.0" layoutY="191.0" prefHeight="93.0" prefWidth="220.0" />
-      <Label fx:id="numeroPosicion" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="485.0" prefHeight="153.0" prefWidth="170.0" />
+      <Label fx:id="numeroPosicion" alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="485.0" prefHeight="153.0" prefWidth="170.0" textFill="#f7b805" />
       <Label fx:id="labelTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="40.0" prefHeight="18.0" prefWidth="833.0" text="VERDUGO" textFill="#c6c4c4" />
-      <ImageView fitHeight="549.0" fitWidth="1010.0" layoutX="-277.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/verdugo.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="454.0" fitWidth="678.0" layoutX="377.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/prisionero.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

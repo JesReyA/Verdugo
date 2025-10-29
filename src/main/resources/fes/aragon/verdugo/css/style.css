@@ -5,11 +5,26 @@
       -fx-font-optical-sizing: auto;
       -fx-font-weight: 50;
       -fx-font-style: normal;
-      -fx-font-size: 15px;
+      -fx-font-size: 16px;
+}
+
+#labelRespuesta{
+-fx-font-family: "Comfortaa", sans-serif;
+      -fx-font-optical-sizing: auto;
+      -fx-font-weight: 50;
+      -fx-font-style: normal;
+      -fx-font-size: 20px;
 }
 
 .text-field{
-    -fx-border-radius: 50px;
+    -fx-background-radius: 30px;
+}
+
+#numeroPosicion{
+  -fx-font-family: "BBH Sans Bartle", sans-serif;
+  -fx-font-weight: 400;
+  -fx-font-style: normal;
+  -fx-font-size: 80px;
 }
 
 #labelTitulo{
@@ -27,6 +42,16 @@
           -fx-font-style: normal;
           -fx-font-size: 15px;
           -fx-background-color: #540212;
+          -fx-background-radius: 30px;
+}
+
+.button:hover{
+    -fx-effect: dropshadow(gaussian, #f7b805, 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.text-field:hover{
+    -fx-effect: dropshadow(gaussian, #D00036, 10, 0.5, 0, 0);
 }
 
 .root{

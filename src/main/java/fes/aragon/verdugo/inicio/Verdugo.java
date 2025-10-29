@@ -16,6 +16,7 @@ public class Verdugo extends Application {
         scene.getStylesheets().add(getClass().getResource("/fes/aragon/verdugo/css/style.css").toExternalForm());
         stage.setTitle("VERDUGO");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
