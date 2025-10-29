@@ -13,6 +13,7 @@ public class Verdugo extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Verdugo.class.getResource("/fes/aragon/verdugo/view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("/fes/aragon/verdugo/css/style.css").toExternalForm());
         stage.setTitle("VERDUGO");
         stage.setScene(scene);
         stage.show();

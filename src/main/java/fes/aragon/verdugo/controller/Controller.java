@@ -11,8 +11,9 @@ public class Controller {
     Verdugo verdugo= new Verdugo();
 
     @FXML
-    private Label labelRespuesta;
+    private Label labelRespuesta, numeroPosicion;
     public TextField cantidadPrisioneros, prisionerosSaltar, ubicacionAmigo;
+
 
     @FXML
     public void obtenerPosicion (ActionEvent e){
@@ -21,6 +22,7 @@ public class Controller {
         String amigo = ubicacionAmigo.getText();
         String posicion = verdugo.matar(Integer.parseInt(k), Integer.parseInt(n), Integer.parseInt(amigo));
 
-        labelRespuesta.setText("El verdugo debe iniciar matando en la posición \n" + posicion);
+        labelRespuesta.setText("El verdugo debe iniciar matando en la posición");
+        numeroPosicion.setText(posicion);
     }
 }

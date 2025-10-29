@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&display=swap');
+
+#tituloSaltar, .text-field, #tituloPrisioneros, #tituloAmigo{
+      -fx-font-family: "Comfortaa", sans-serif;
+      -fx-font-optical-sizing: auto;
+      -fx-font-weight: 50;
+      -fx-font-style: normal;
+      -fx-font-size: 15px;
+}
+
+.text-field{
+    -fx-border-radius: 50px;
+}
+
+#labelTitulo{
+      -fx-font-family: "Cinzel", serif;
+      -fx-font-optical-sizing: auto;
+      -fx-font-weight: 900;
+      -fx-font-style: normal;
+      -fx-font-size: 50px;
+}
+
+.button{
+    -fx-font-family: "Comfortaa", sans-serif;
+          -fx-font-optical-sizing: auto;
+          -fx-font-weight: 50;
+          -fx-font-style: normal;
+          -fx-font-size: 15px;
+          -fx-background-color: #540212;
+}
+
+.root{
+    -fx-background-color: "black";
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+
+
+
